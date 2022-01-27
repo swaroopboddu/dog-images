@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import  { useEffect, useState } from "react";
 import { Breeds, getAllBreads } from "./fetchdata";
 
 export const useDogBreads = (afterLoadingBreeds: (value: string) => void):[Breeds, string, string[]]=>{
