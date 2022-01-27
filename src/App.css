@@ -46,11 +46,11 @@ img{
   .selection-item{
     display: flex;
     flex-direction: column;
-    justify-content: start;
+    justify-content: flex-start;
   }
 
   .selection-item > label{
-    align-self: start;
+    align-self: flex-start;
   }
 
   img{
