@@ -17,7 +17,7 @@
   align-content: center;
   flex-wrap: wrap;
   flex-direction: row;
-  gap: 5px;
+  gap: 5em;
 }
 
 img{
@@ -35,6 +35,29 @@ img{
   gap: 10px;
   padding: 10px;
   align-self: center;
+}
+
+@media only screen and (max-width: 400px) {
+  .selection-container{
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+
+  .selection-item{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+  }
+
+  .selection-item > label{
+    align-self: start;
+  }
+
+  img{
+    max-width: 400px;
+    max-height: 400px;
+  }
+  
 }
 
 label{
